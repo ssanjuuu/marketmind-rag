@@ -23,7 +23,7 @@ graph LR
 - **Ingestion**: RSS feeds (Yahoo Finance, CoinDesk, MarketWatch)
 - **Embeddings**: sentence-transformers (all-MiniLM-L6-v2), runs locally
 - **Vector store**: ChromaDB (local, persistent)
-- **Search**: hybrid search combining vector similarity (sentence-transformers) and BM25 keyword matching, with weighted score fusion
+- **Search**: hybrid search (vector + BM25) with cross-encoder reranking (ms-marco-MiniLM-L-6-v2) for final precision
 - **Interface**: Streamlit
 
 ## Running it
